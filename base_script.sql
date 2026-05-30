@@ -1,10 +1,11 @@
-# Выводим список логинов курьеров с количеством их заказов в статусе «В доставке» (поле inDelivery = true).
+-- Дина Мошкова, 43-я когорта — Финальный проект. Инженер по тестированию плюс
 
+-- Выводим список логинов курьеров с количеством их заказов в статусе «В доставке» (поле inDelivery = true).
 SELECT
   c.login AS login,
   COUNT(o.id) AS "delivery_cnt"
 FROM
-  "Couriers" AS с
+  "Couriers" AS c
 LEFT JOIN
   "Orders" AS o 
 ON c.id = o."courierId"
@@ -14,8 +15,7 @@ GROUP BY
   c.login;
 
 
-# Выводим все трекеры заказов и их статусы.
-
+-- Выводим все трекеры заказов и их статусы.
 SELECT
   track,
   CASE

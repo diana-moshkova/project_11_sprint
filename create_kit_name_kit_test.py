@@ -1,3 +1,4 @@
+# Дина Мошкова, 43-я когорта — Финальный проект. Инженер по тестированию плюс
 # create_kit_name_kit_test.py
 import pytest
 from data import get_order_body
