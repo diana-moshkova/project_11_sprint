@@ -1,17 +1,12 @@
 # data.py
-import copy
-
 ORDER_BODY = {
-    "firstName": "Naruto",
+    "firstName": "Vasya",
     "lastName": "Uchiha",
     "address": "Konoha, 142 apt.",
-    "metroStation": "4",
+    "metroStation": 4,
     "phone": "+7 800 355 35 35",
     "rentTime": 5,
     "deliveryDate": "2020-06-06",
     "comment": "Saske, come back to Konoha",
     "color": ["BLACK"]
 }
-
-def get_order_body():
-    return copy.deepcopy(ORDER_BODY)
